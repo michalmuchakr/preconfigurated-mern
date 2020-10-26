@@ -1,0 +1,71 @@
+{
+  "name": "preconfigurated-react",
+  "version": "0.1.0",
+  "description": "Welcome to React pre congigurated environment.",
+  "main": "index.jsx",
+  "scripts": {
+    "build": "npm run clean && webpack --config webpack.config.prod.js",
+    "clean": "shx rm -rf ./dist",
+    "prettier": "prettier --write .",
+    "start:dev": "webpack serve --config webpack.config.dev.js --progress --profile",
+    "start": "node express-static.js",
+    "lint": "eslint src/**/*.js src/**/*.jsx --fix",
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Michal Mucha | General Cube",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michalmuchakr/preconfigurated-react"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.3",
+    "@babel/eslint-parser": " 7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "7.12.1",
+    "@testing-library/jest-dom": "5.11.5",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "axios-mock-adapter": "1.18.2",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "css-loader": "5.0.0",
+    "eslint": "7.12.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "file-loader": "6.1.1",
+    "html-webpack-plugin": "4.5.0",
+    "husky": "4.3.0",
+    "jest": "26.6.1",
+    "mini-css-extract-plugin": "1.2.0",
+    "node-sass": "4.14.1",
+    "prettier": "2.1.2",
+    "react-test-renderer": "17.0.1",
+    "sass-loader": "10.0.4",
+    "shx": "0.3.2",
+    "style-loader": "2.0.0",
+    "webpack": "^5.2.0",
+    "webpack-assets-manifest": "3.1.1",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "0.21.0",
+    "express": "4.17.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0",
+    "react-router-dom": "5.2.0"
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11"
+  ]
+}
